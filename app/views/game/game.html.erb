@@ -1,0 +1,12 @@
+<h1>Game#game</h1>
+<p>Find me in app/views/game/game.html.erb</p>
+<%= @grid %>
+<form action="/score" class="form-inline" id="form_word">
+  <div class="form-group">
+    <input type="text" class="form-control" name="word" placeholder="Enter word">
+    <input type="hidden" class="form-control" name="start_time" value=<%= @start_time %>>
+    <input type="hidden" class="form-control" name="grid" value=<%= @grid %>>
+  </div>
+  <button type="submit" class="btn btn-primary">Score me!</button>
+</form>
+
